@@ -1,0 +1,5 @@
+Persona_barbershop: Ivan, Phone: 325820358025, Data_visit: 23.95.2323
+Persona_barbershop: Ivan, Phone: 325820358025, Data_visit: 23.95.2323
+Persona_barbershop: Artem, Phone: 235336878, Data_visit: 23.34.3423
+Persona_barbershop: s`dggzfszb, Phone: rag43643, Data_visit: 22.33.44, Select teacher: 2
+Persona_barbershop: ad`sgdzg, Phone: 4wtrreg, Data_visit: 22.44.66, Select teacher: Alina Sergeyevna

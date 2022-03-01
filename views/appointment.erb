@@ -1,0 +1,25 @@
+<h2>Recording on lesson</h2>
+<form action="/appointment" method="post">
+  <div class="mb-3">
+    <label class="form-label">Your name</label>
+    <input type="text" name="user_name" class="form-control" placeholder="Enter your name">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Phone</label>
+    <input type="text" name="user_phone" class="form-control" placeholder="Enter your phone">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Date time</label>
+    <input type="text" name="date_time" class="form-control" placeholder="Enter data visit">
+  </div>
+  <br>
+  <select class="form-select" aria-label="Default select example" name="select_teacher">
+    <option selected>Choose a teacher</option>
+    <option value="Valentina Ivanovna">Valentina Ivanovna</option>
+    <option value="Sergei Mikhailovich">Sergei Mikhailovich</option>
+    <option value="Alina Sergeyevna">Alina Sergeyevna</option>
+  </select>
+  <br>
+  <br>
+  <button type="submit" class="btn btn-primary">Record in class</button>
+</form>
