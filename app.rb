@@ -9,6 +9,7 @@ get '/' do
 end
 
 get '/about_us' do 
+  @error = "Hi"
   erb :about_us
 end
 
@@ -23,12 +24,40 @@ post '/appointment' do
   @select_teacher = params[:select_teacher]
   @color_jqvery = params[:color_jqvery]
 
+  # if @user_name == ''
+  #   @error = "Enter name"
+  # elsif @user_phone == ''
+  #   @error = "Enter phone"
+  # elsif @date_time == ''
+  #   @error = "Enter date time"
+  # elsif @select_teacher == ''
+  #   @error = "Enter teacher"
+  # elsif @color_jqvery == ''
+  #   @error = "Enter color"
+  # end
+
+  validate_error = {
+    user_name: "Enter name", 
+    user_phone: "Enter phone", 
+    date_time: "Enter date time", 
+    select_teacher: "Enter teacher", 
+    color_jqvery: "Enter color"
+  }
+
+  validate_error.each do |key, value|
+    if params[key] == ''
+      @error = validate_error[key]
+      return erb :appointment
+    end
+  end
+
   file_users_data = File.open("./public/users_date.txt", "a") do |f|
-    f.write("Persona_barbershop: #{@user_name}, Phone: #{@user_phone}, Data_visit: #{@date_time}, Select teacher: #{@select_teacher}, Color: #{@color_jqvery}\n")
+    f.write("Persona_draw_school: #{@user_name}, Phone: #{@user_phone}, Data_visit: #{@date_time}, Select teacher: #{@select_teacher}, Color: #{@color_jqvery}\n")
     f.close
   end
 
-  erb :appointment
+  erb "Your create print. Persona_draw_school: #{@user_name}, Phone: #{@user_phone}, Data_visit: #{@date_time}, Select teacher: #{@select_teacher}, Color: #{@color_jqvery}"
+  # erb :appointment
 end
 
 post '/contacts' do 

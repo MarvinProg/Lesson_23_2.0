@@ -14,3 +14,17 @@ Persona_barbershop: dvdvfv, Phone: fsvfvfv, Data_visit: vfvfv, Select teacher: A
 Persona_barbershop: dvdvfv, Phone: fsvfvfv, Data_visit: vfvfv, Select teacher: Alina Sergeyevna, Color: 
 Persona_barbershop: dvdvfv, Phone: fsvfvfv, Data_visit: vfvfv, Select teacher: Alina Sergeyevna, Color: 
 Persona_barbershop: febdfb, Phone: dbdb, Data_visit: dbdb, Select teacher: Sergei Mikhailovich, Color: #a4bdfc
+Persona_barbershop: febdfb, Phone: dbdb, Data_visit: dbdb, Select teacher: Sergei Mikhailovich, Color: #a4bdfc
+Persona_barbershop: afdv, Phone: , Data_visit: sbadv, Select teacher: Valentina Ivanovna, Color: #46d6db
+Persona_barbershop: sdvs, Phone: , Data_visit: sbsb, Select teacher: Valentina Ivanovna, Color: #7bd148
+Persona_barbershop: sdvs, Phone: , Data_visit: sbsb, Select teacher: Valentina Ivanovna, Color: #7bd148
+Persona_barbershop: sdvs, Phone: , Data_visit: sbsb, Select teacher: Valentina Ivanovna, Color: #7bd148
+Persona_barbershop: fvxv, Phone: sfbsfb, Data_visit: , Select teacher: Sergei Mikhailovich, Color: #46d6db
+Persona_barbershop: fvxv, Phone: sfbsfb, Data_visit: , Select teacher: Sergei Mikhailovich, Color: #46d6db
+Persona_draw_school: afdv, Phone: sfvs, Data_visit: ssv, Select teacher: Sergei Mikhailovich, Color: #a4bdfc
+Persona_draw_school: , Phone: , Data_visit: , Select teacher: Choose a teacher, Color: #7bd148
+Persona_draw_school: , Phone: , Data_visit: , Select teacher: Choose a teacher, Color: #7bd148
+Persona_draw_school: , Phone: , Data_visit: , Select teacher: Choose a teacher, Color: #7bd148
+Persona_draw_school: sdv, Phone: vsvs, Data_visit: svs, Select teacher: Valentina Ivanovna, Color: #a4bdfc
+Persona_draw_school: sdvv, Phone: fssfvs, Data_visit: sfbs, Select teacher: Valentina Ivanovna, Color: #5484ed
+Persona_draw_school: Artem, Phone: sv, Data_visit: svs, Select teacher: Sergei Mikhailovich, Color: #a4bdfc
