@@ -3,3 +3,14 @@ Persona_barbershop: Ivan, Phone: 325820358025, Data_visit: 23.95.2323
 Persona_barbershop: Artem, Phone: 235336878, Data_visit: 23.34.3423
 Persona_barbershop: s`dggzfszb, Phone: rag43643, Data_visit: 22.33.44, Select teacher: 2
 Persona_barbershop: ad`sgdzg, Phone: 4wtrreg, Data_visit: 22.44.66, Select teacher: Alina Sergeyevna
+Persona_barbershop: впффр, Phone: фры, Data_visit: еуоыа, Select teacher: Alina Sergeyevna
+Persona_barbershop: впффр, Phone: фры, Data_visit: еуоыа, Select teacher: Alina Sergeyevna, Color: 
+Persona_barbershop: sfsabfb, Phone: abab, Data_visit: abafb, Select teacher: Alina Sergeyevna, Color: 
+Persona_barbershop: sfsabfb, Phone: abab, Data_visit: abafb, Select teacher: Alina Sergeyevna, Color: 
+Persona_barbershop: gsdbf, Phone: aba, Data_visit: adbab, Select teacher: Alina Sergeyevna, Color: 
+Persona_barbershop: gsdbf, Phone: aba, Data_visit: adbab, Select teacher: Alina Sergeyevna, Color: 
+Persona_barbershop: dvdvfv, Phone: fsvfvfv, Data_visit: vfvfv, Select teacher: Alina Sergeyevna, Color: 
+Persona_barbershop: dvdvfv, Phone: fsvfvfv, Data_visit: vfvfv, Select teacher: Alina Sergeyevna, Color: 
+Persona_barbershop: dvdvfv, Phone: fsvfvfv, Data_visit: vfvfv, Select teacher: Alina Sergeyevna, Color: 
+Persona_barbershop: dvdvfv, Phone: fsvfvfv, Data_visit: vfvfv, Select teacher: Alina Sergeyevna, Color: 
+Persona_barbershop: febdfb, Phone: dbdb, Data_visit: dbdb, Select teacher: Sergei Mikhailovich, Color: #a4bdfc
