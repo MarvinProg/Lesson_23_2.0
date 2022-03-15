@@ -5,9 +5,9 @@ require 'sinatra/reloader'
 require 'sqlite3'
 
 def get_db 
-  return SQLite3::Database.new 'my_db.db'
-  db.results_as_hash = true
-  return db
+  db_create = SQLite3::Database.new 'my_db.db'
+  db_create.results_as_hash = true
+  return db_create
 end
 
 configure do 
@@ -38,19 +38,24 @@ get '/appointment' do
   erb :appointment
 end
 
+def save_in_db 
+  db = get_db
+  db.execute 'insert into Users (user_name, user_phone, date_time, select_teacher, color_jquery) values (?, ?, ?, ?, ?)', [@user_name, @user_phone, @date_time, @select_teacher, @color_jquery]
+end
+
 post '/appointment' do 
   @user_name = params[:user_name]
   @user_phone = params[:user_phone]
   @date_time = params[:date_time]
   @select_teacher = params[:select_teacher]
-  @color_jqvery = params[:color_jquery]
+  @color_jquery = params[:color_jquery]
 
   validate_error = {
     user_name: "Enter name", 
     user_phone: "Enter phone", 
     date_time: "Enter date time", 
     select_teacher: "Enter teacher", 
-    color_jqvery: "Enter color"
+    color_jquery: "Enter color"
   }
 
   validate_error.each do |key, value|
@@ -61,19 +66,14 @@ post '/appointment' do
   end
 
   file_users_data = File.open("./public/users_date.txt", "a") do |f|
-    f.write("Persona_draw_school: #{@user_name}, Phone: #{@user_phone}, Data_visit: #{@date_time}, Select teacher: #{@select_teacher}, Color: #{@color_jqvery}\n")
+    f.write("Persona_draw_school: #{@user_name}, Phone: #{@user_phone}, Data_visit: #{@date_time}, Select teacher: #{@select_teacher}, Color: #{@color_jquery}\n")
     f.close
   end
 
   save_in_db
 
-  erb "Your create print. Persona_draw_school: #{@user_name}, Phone: #{@user_phone}, Data_visit: #{@date_time}, Select teacher: #{@select_teacher}, Color: #{@color_jqvery}"
+  erb "Your create print. Persona_draw_school: #{@user_name}, Phone: #{@user_phone}, Data_visit: #{@date_time}, Select teacher: #{@select_teacher}, Color: #{@color_jquery}"
   # erb :appointment
-end
-
-def save_in_db 
-  db = get_db
-  db.execute 'insert into Users (user_name, user_phone, date_time, select_teacher, color_jquery) values (?, ?, ?, ?, ?)', [@user_name, @user_phone, @date_time, @select_teacher, @color_jqvery]
 end
 
 post '/contacts' do 
@@ -95,6 +95,12 @@ end
 get '/admin' do 
   # @logfile = File.read("public/email_data.txt")
   erb :admin
+end
+
+get '/admin/show' do 
+  db = get_db
+  @db_result = db.execute 'select * from Users order by id desc'  
+  erb :show
 end
 
 get '/authorization' do 
