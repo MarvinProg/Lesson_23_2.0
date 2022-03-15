@@ -35,3 +35,4 @@ Persona_draw_school: sdv, Phone: svsvsv, Data_visit: dvsdv, Select teacher: Serg
 Persona_draw_school: sdv, Phone: svsvsv, Data_visit: dvsdv, Select teacher: Sergei Mikhailovich, Color: #ffb878
 Persona_draw_school: zvccv, Phone: sdvsv, Data_visit: svsdvsv, Select teacher: Sergei Mikhailovich, Color: #46d6db
 Persona_draw_school: sgdfb, Phone: dfndn, Data_visit: gngdm, Select teacher: Sergei Mikhailovich, Color: #a4bdfc
+Persona_draw_school: dsbsdb, Phone: sddb, Data_visit: sbdsb, Select teacher: Sergei Mikhailovich, Color: #7ae7bf

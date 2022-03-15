@@ -10,6 +10,18 @@ def get_db
   return db_create
 end
 
+def teacher_list? db, teacher_name
+  db.execute('select * from Teachers where teacher_name = ?', [teacher_name]).length > 0
+end
+
+def seed_db db, teathers
+  teathers.each do |teacher|
+    if !teacher_list? db, teacher
+      db.execute('insert into Teachers (teacher_name) values (?)', [teacher])
+    end
+  end
+end 
+
 configure do 
   db = get_db
   db.execute 'CREATE TABLE IF NOT EXISTS "Users" 
@@ -21,8 +33,16 @@ configure do
       "select_teacher" TEXT,
       "color_jquery" TEXT
     )'
+  db.execute 'CREATE TABLE IF NOT EXISTS "Teachers" 
+  (
+    "Id" INTEGER PRIMARY KEY, 
+    "teacher_name" TEXT
+  )'
+  seed_db db, ['Valentina Ivanovna', 'Sergei Mikhailovich', 'Alina Sergeyevna']
   db.close
 end
+
+
 
 get '/' do
   erb :index
@@ -35,6 +55,8 @@ get '/about_us' do
 end
 
 get '/appointment' do 
+  db = get_db
+  @db_result_teacher = db.execute 'select * from Teachers order by id desc' 
   erb :appointment
 end
 
