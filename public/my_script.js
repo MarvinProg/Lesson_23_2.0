@@ -9,3 +9,5 @@ $('select[name="color_jqvery"]').simplecolorpicker();
 // }).on('change', function() {
 //   $(document.body).css('background-color', $('select[name="colorpicker"]').val());
 // });
+
+jQuery('#datetimepicker').datetimepicker();

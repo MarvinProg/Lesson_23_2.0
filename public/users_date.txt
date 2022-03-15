@@ -28,3 +28,10 @@ Persona_draw_school: , Phone: , Data_visit: , Select teacher: Choose a teacher, 
 Persona_draw_school: sdv, Phone: vsvs, Data_visit: svs, Select teacher: Valentina Ivanovna, Color: #a4bdfc
 Persona_draw_school: sdvv, Phone: fssfvs, Data_visit: sfbs, Select teacher: Valentina Ivanovna, Color: #5484ed
 Persona_draw_school: Artem, Phone: sv, Data_visit: svs, Select teacher: Sergei Mikhailovich, Color: #a4bdfc
+Persona_draw_school: Artem, Phone: dvsdv, Data_visit: svsd, Select teacher: Sergei Mikhailovich, Color: #fbd75b
+Persona_draw_school: Artem, Phone: dvsdv, Data_visit: svsd, Select teacher: Sergei Mikhailovich, Color: #fbd75b
+Persona_draw_school: sdv, Phone: svsvsv, Data_visit: dvsdv, Select teacher: Sergei Mikhailovich, Color: #ffb878
+Persona_draw_school: sdv, Phone: svsvsv, Data_visit: dvsdv, Select teacher: Sergei Mikhailovich, Color: #ffb878
+Persona_draw_school: sdv, Phone: svsvsv, Data_visit: dvsdv, Select teacher: Sergei Mikhailovich, Color: #ffb878
+Persona_draw_school: zvccv, Phone: sdvsv, Data_visit: svsdvsv, Select teacher: Sergei Mikhailovich, Color: #46d6db
+Persona_draw_school: sgdfb, Phone: dfndn, Data_visit: gngdm, Select teacher: Sergei Mikhailovich, Color: #a4bdfc

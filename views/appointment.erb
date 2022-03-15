@@ -1,4 +1,10 @@
 <h2>Recording on lesson</h2>
+<script type="text/javascriot">
+  $(function()) {
+    $('select[name="color_jqvery"]').simplecolorpicker();
+    jQuery('#datetimepicker').datetimepicker();
+  };
+</script>
 <form action="/appointment" method="post">
   <div class="mb-3">
     <label class="form-label">Your name</label>
@@ -10,7 +16,7 @@
   </div>
   <div class="mb-3">
     <label class="form-label">Date time</label>
-    <input type="text" name="date_time" class="form-control" placeholder="Enter data visit" value="<%= @date_time %>">
+    <input id="datetimepicker" type="text" name="date_time" class="form-control" placeholder="Enter data visit" value="<%= @date_time %>">
   </div>
   <br>
   <select class="form-select" aria-label="Default select example" name="select_teacher">
@@ -23,7 +29,7 @@
   <br>
   <div class="mb-3" >
     <label class="form-label">Choose color:</label>
-    <select name="color_jqvery">
+    <select name="color_jquery">
       <option value="#7bd148">Green</option>
       <option value="#5484ed">Bold blue</option>
       <option value="#a4bdfc">Blue</option>
@@ -42,5 +48,5 @@
   <button type="submit" class="btn btn-primary">Record in class</button>
 </form>
   
-<script src="/my_script.js"></script>
+
 
