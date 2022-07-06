@@ -14,8 +14,8 @@ def teacher_list? db, teacher_name
   db.execute('select * from Teachers where teacher_name = ?', [teacher_name]).length > 0
 end
 
-def seed_db db, teathers
-  teathers.each do |teacher|
+def seed_db db, teachers
+  teachers.each do |teacher|
     if !teacher_list? db, teacher
       db.execute('insert into Teachers (teacher_name) values (?)', [teacher])
     end
